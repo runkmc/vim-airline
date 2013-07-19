@@ -1,8 +1,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Options
 """"""""""""""""""""""""""""""""""""""""""""""""
-let s:reduced = get(g:, 'airline_solarized_reduced', 1)
-let s:background = get(g:, 'airline_solarized_bg', &background)
+let s:reduced = get(g:, 'airline_solarized2_reduced', 1)
+let s:background = get(g:, 'airline_solarized2_bg', &background)
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Colors
@@ -117,46 +117,46 @@ let s:NFa = [s:NF[0].g, s:NF[1].g, s:NF[0].t, s:NF[1].t, s:NF[2]]
 let s:IFa = [s:IF[0].g, s:IF[1].g, s:IF[0].t, s:IF[1].t, s:IF[2]]
 let s:VFa = [s:VF[0].g, s:VF[1].g, s:VF[0].t, s:VF[1].t, s:VF[2]]
 
-let g:airline#themes#solarized#inactive = airline#themes#generate_color_map(
+let g:airline#themes#solarized2#inactive = airline#themes#generate_color_map(
             \ [s:IA[0].g, s:IA[1].g, s:IA[0].t, s:IA[1].t, s:IA[2]],
             \ [s:IA[0].g, s:IA[1].g, s:IA[0].t, s:IA[1].t, s:IA[2]],
             \ [s:IA[0].g, s:IA[1].g, s:IA[0].t, s:IA[1].t, s:IA[2]],
             \ s:NFa)
 
-let g:airline#themes#solarized#inactive_modified = {
+let g:airline#themes#solarized2#inactive_modified = {
             \ 'statusline': [s:NM.statusline[0].g, '', s:NM.statusline[0].t, '', ''] }
 
-let g:airline#themes#solarized#normal = airline#themes#generate_color_map(
+let g:airline#themes#solarized2#normal = airline#themes#generate_color_map(
             \ [s:N1[0].g, s:N1[1].g, s:N1[0].t, s:N1[1].t, s:N1[2]],
             \ [s:N2[0].g, s:N2[1].g, s:N2[0].t, s:N2[1].t, s:N2[2]],
             \ [s:N3[0].g, s:N3[1].g, s:N3[0].t, s:N3[1].t, s:N3[2]],
             \ s:NFa)
 
-let g:airline#themes#solarized#normal_modified = {
+let g:airline#themes#solarized2#normal_modified = {
             \ 'info_separator': [s:NM.info_separator[0].g, s:NM.info_separator[1].g,
             \ s:NM.info_separator[0].t, s:NM.info_separator[1].t, s:NM.info_separator[2]],
             \ 'statusline': [s:NM.statusline[0].g, s:NM.statusline[1].g,
             \ s:NM.statusline[0].t, s:NM.statusline[1].t, s:NM.statusline[2]]}
 
-let g:airline#themes#solarized#insert = airline#themes#generate_color_map(
+let g:airline#themes#solarized2#insert = airline#themes#generate_color_map(
             \ [s:I1[0].g, s:I1[1].g, s:I1[0].t, s:I1[1].t, s:I1[2]],
             \ [s:I2[0].g, s:I2[1].g, s:I2[0].t, s:I2[1].t, s:I2[2]],
             \ [s:I3[0].g, s:I3[1].g, s:I3[0].t, s:I3[1].t, s:I3[2]],
             \ s:IFa)
 
-let g:airline#themes#solarized#insert_modified = {
+let g:airline#themes#solarized2#insert_modified = {
             \ 'info_separator': [s:IM.info_separator[0].g, s:IM.info_separator[1].g,
             \ s:IM.info_separator[0].t, s:IM.info_separator[1].t, s:IM.info_separator[2]],
             \ 'statusline': [s:IM.statusline[0].g, s:IM.statusline[1].g,
             \ s:IM.statusline[0].t, s:IM.statusline[1].t, s:IM.statusline[2]]}
 
-let g:airline#themes#solarized#visual = airline#themes#generate_color_map(
+let g:airline#themes#solarized2#visual = airline#themes#generate_color_map(
             \ [s:V1[0].g, s:V1[1].g, s:V1[0].t, s:V1[1].t, s:V1[2]],
             \ [s:V2[0].g, s:V2[1].g, s:V2[0].t, s:V2[1].t, s:V2[2]],
             \ [s:V3[0].g, s:V3[1].g, s:V3[0].t, s:V3[1].t, s:V3[2]],
             \ s:VFa)
 
-let g:airline#themes#solarized#visual_modified = {
+let g:airline#themes#solarized2#visual_modified = {
             \ 'info_separator': [s:VM.info_separator[0].g, s:VM.info_separator[1].g,
             \ s:VM.info_separator[0].t, s:VM.info_separator[1].t, s:VM.info_separator[2]],
             \ 'statusline': [s:VM.statusline[0].g, s:VM.statusline[1].g,
