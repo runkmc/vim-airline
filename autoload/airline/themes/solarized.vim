@@ -75,8 +75,8 @@ if s:reduced
 else
     let s:I2 = [s:base3, s:cyan, 'bold']
 endif
-let s:I3 = [s:base1, s:base02, '']
-let s:IF = [s:orange, s:base02, '']
+let s:I3 = [s:base02, s:base1, '']
+let s:IF = [s:orange, s:base1, '']
 if s:reduced
     let s:IM = s:NM
 else
@@ -90,7 +90,7 @@ endif
 let s:V1 = [s:N1[0], s:magenta, 'bold']
 if s:reduced
     let s:V2 = [s:base3, s:violet, 'bold']
-    let s:V3 = s:N3
+    let s:V3 = s:I3
 else
     let s:V2 = [s:base3, s:violet, 'bold']
     let s:V3 = s:I3
