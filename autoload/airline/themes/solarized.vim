@@ -33,8 +33,8 @@ let s:c52     = {'t': 52,  'g': '#5f0000'}
 " the specific gui and terminal colors from the base color dicts.
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Normal mode
-let s:N1 = [s:base3, s:yellow, 'bold']
-let s:N2 = [s:base3, s:orange, 'bold']
+let s:N1 = [s:base3, s:green, 'bold']
+let s:N2 = [s:base3, s:yellow, 'bold']
 if s:background == 'dark'
     let s:N3 = [s:base1, s:base03, '']
 else
@@ -45,12 +45,12 @@ if s:reduced
     if s:background == 'dark'
         let s:NM = {
                     \ 'info_separator': [s:N2[1], s:N3[1], ''],
-                    \ 'statusline': [s:orange, s:N3[1], ''],
+                    \ 'statusline': [s:red, s:N3[1], ''],
                     \ }
     else
         let s:NM = {
                     \ 'info_separator': [s:N2[1], s:N3[1], ''],
-                    \ 'statusline': [s:orange, s:N3[1], ''],
+                    \ 'statusline': [s:red, s:N3[1], ''],
                     \ }
     endif
 else
@@ -71,7 +71,7 @@ endif
 " Insert mode
 let s:I1 = [s:N1[0], s:blue, 'bold']
 if s:reduced
-    let s:I2 = s:N2
+    let s:I2 = [s:base3, s:cyan, 'bold']
 else
     let s:I2 = [s:base3, s:cyan, 'bold']
 endif
@@ -92,7 +92,7 @@ if s:reduced
     let s:V2 = [s:base3, s:violet, 'bold']
     let s:V3 = s:N3
 else
-    let s:V2 = s:I2
+    let s:V2 = [s:base3, s:violet, 'bold']
     let s:V3 = s:I3
 endif
 let s:VF = s:NF
