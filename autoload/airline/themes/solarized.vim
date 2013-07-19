@@ -8,14 +8,14 @@ let s:background = get(g:, 'airline_solarized_bg', &background)
 " Colors
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Base colors
-let s:base03  = {'t': 234, 'g': '#002b36'}
+let s:base03  = {'t': 0, 'g': '#002b36'}
 let s:base02  = {'t': 235, 'g': '#073642'}
 let s:base01  = {'t': 240, 'g': '#586e75'}
 let s:base00  = {'t': 241, 'g': '#657b83'}
 let s:base0   = {'t': 244, 'g': '#839496'}
 let s:base1   = {'t': 245, 'g': '#93a1a1'}
-let s:base2   = {'t': 254, 'g': '#eee8d5'}
-let s:base3   = {'t': 230, 'g': '#fdf6e3'}
+let s:base2   = {'t': 7, 'g': '#eee8d5'}
+let s:base3   = {'t': 15, 'g': '#fdf6e3'}
 let s:yellow  = {'t': 3, 'g': '#b58900'}
 let s:orange  = {'t': 9, 'g': '#cb4b16'}
 let s:red     = {'t': 1, 'g': '#dc322f'}
@@ -33,10 +33,10 @@ let s:c52     = {'t': 52,  'g': '#5f0000'}
 " the specific gui and terminal colors from the base color dicts.
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Normal mode
-let s:N1 = [s:base2, s:blue, 'bold']
-let s:N2 = [s:base2, s:base01, '']
+let s:N1 = [s:base3, s:green, 'bold']
+let s:N2 = [s:base3, s:cyan, 'bold']
 if s:background == 'dark'
-    let s:N3 = [s:base1, s:base02, '']
+    let s:N3 = [s:base1, s:base03, '']
 else
     let s:N3 = [s:base00, s:base2, '']
 endif
